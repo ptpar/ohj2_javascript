@@ -19,7 +19,6 @@ const apiAddress = proxy + encodeURIComponent(url);
 
 const apiAddress = 'https://api.digitransit.fi/routing/v2/hsl/gtfs/v1';
 //tämä ei toimi: 'https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql';
-//const apiKey = '822199553d0f426195eb018fe8901b2b';
 
 // fetch route with origin and target
 function getRoute(origin, target) {
