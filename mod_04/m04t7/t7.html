@@ -7,12 +7,38 @@
 </head>
 <body>
 <h1>Bussi/juna/yms reitti kartalle</h1>
+<form>
+    <div class="form-row">
+        <div class="label">
+            <label for="startpoint">Lähtöpaikka:</label>
+        </div>
+        <div class="input">
+            <input type="text" name="startpoint" id="startpoint">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="label">
+            <label for="endpoint">Määränpää:</label>
+        </div>
+
+        <input type="text" name="endpoint" id="endpoint">
+    </div>
+    <div class="form-row">
+        <input type="submit">
+    </div>
+</form>
+<div id="time">
+    <p id="id1">Lähtöaika: <span id="startTime"></span></p>
+    <p id="id2">Saapumisaika: <span id="endTime"></span></p>
+</div>
 <p id="journey"></p>
 <div id="map" style="width: 100%; height: 400px;"></div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
 <script src="return_json.js"></script>
 <script src="Polyline.encoded.js"></script>
 <script src="asetukset.js"></script>
+<link href="style.css" rel="stylesheet">
 <script src="t7.js"></script>
 </body>
 </html>
